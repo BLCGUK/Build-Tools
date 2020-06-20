@@ -9,7 +9,7 @@
         "id": "Microsoft.VisualStudio.Services"
       }
     ],
-    "description": "Tasks for automating PowerPlatform commands from build and release pipelines",
+    "description": "Tasks for automating Azure Cognitive Services from build and release pipelines",
     "categories": [
       "Azure Pipelines"
     ],

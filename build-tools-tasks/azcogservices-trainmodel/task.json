@@ -17,7 +17,7 @@
       "Patch": 4
     },
     "minimumAgentVersion": "1.95.0",
-    "instanceNameFormat": "Hitachi Build Tools - Call HTTP Endpoint",
+    "instanceNameFormat": "BCLG - Publish Model",
     "inputs": [
       {
         "name": "httpEndPoint",
