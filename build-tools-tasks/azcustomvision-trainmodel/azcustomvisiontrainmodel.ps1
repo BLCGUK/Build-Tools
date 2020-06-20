@@ -7,11 +7,8 @@ $ErrorActionPreference = "Stop"
 Write-Verbose 'Entering powerappshttpcall.ps1'
 
 #Get Parameters
-$httpEndPoint = -Name httpEndPoint -Require
+$customVisionEndPoint = -Name Get-VstsInput -Name cognitiveServicesEndPoint -Require
 
-Invoke-WebRequest -Uri "$httpEndPoint" -Method POST
-
-Invoke-WebRequest -UseBasicParsing http://example.com/service -ContentType "application/json" -Training-Key "$httpEndPoint" -Method POST -Body "{ 'ItemID':3661515, 'Name':'test'}"
-
+Invoke-WebRequest -Uri "$customVisionEndPoint" -Method POST
 
 Write-Verbose 'Leaving powerappshttpcall.ps1'

@@ -3,7 +3,7 @@
     "name": "azcogservices-trainmodel",
     "friendlyName": "Train Custom Vision Model",
     "description": "Hits an endpoint",
-    "author": "Hitachi Solutions Europe",
+    "author": "",
     "helpMarkDown": "HTTP request documentation can be found here",
     "category": "Build",
     "visibility": [

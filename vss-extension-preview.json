@@ -25,7 +25,7 @@
       "Canvas PowerApps"
     ],
     "icons": {
-      "default": "images/extension-icon.png"
+      "default": "build-tools-images/extension-icon.png"
     },
     "files": [
       {
