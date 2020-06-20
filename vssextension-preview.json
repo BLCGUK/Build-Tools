@@ -1,9 +1,9 @@
 {
     "manifestVersion": 1,
-    "id": "hitachi-ci-build-tools",
-    "name": "Hitachi Build Tools",
-    "version": "1.0.65",
-    "publisher": "hitachisolutionseurope",
+    "id": "bclg-ci-build-tools",
+    "name": "BCLG Build Tools - Preview",
+    "version": "1.0.36",
+    "publisher": "bclg",
     "targets": [
       {
         "id": "Microsoft.VisualStudio.Services"
@@ -33,39 +33,6 @@
       },
       {
         "path": "tasks/powerapps-getpowerapp"
-      },
-      {
-        "path": "tasks/powerautomateapps-httpcall"
-      },
-      {
-        "path": "tasks/powerapps-publishcanvasapp"
-      },
-      {
-        "path": "tasks/powerapps-sharecanvasapp"
-      },
-      {
-        "path": "tasks/powerapps-toolsinstaller"
-      },
-      {
-        "path": "tasks/powerautomate-disableflow"
-      },
-      {
-        "path": "tasks/powerautomate-removeflow"
-      },
-      {
-        "path": "tasks/powerapps-recoverpowerapp"
-      },
-      {
-        "path": "tasks/powerbi-copyreport"
-      },
-      {
-        "path": "tasks/powerbi-createreport"
-      },
-      {
-        "path": "tasks/powerbi-createdashboard"
-      },
-      {
-        "path": "tasks/powerbi-createworkspace"
       }
     ],
     "contributions": [
@@ -76,37 +43,7 @@
           "ms.vss-distributed-task.tasks"
         ],
         "properties": {
-          "name": "tasks/powerapps-enableflow"
-        }
-      },
-      {
-        "id": "powerapps-disableflow",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-disableflow"
-        }
-      },
-      {
-        "id": "powerapps-removeflow",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-removeflow"
-        }
-      },
-      {
-        "id": "powerapps-getpowerapp",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-getpowerapp"
+          "name": "build-tools-tasks/powerapps-enableflow"
         }
       },
       {
@@ -117,46 +54,6 @@
         ],
         "properties": {
           "name": "tasks/powerapps-httpcall"
-        }
-      },
-      {
-        "id": "powerapps-publishcanvasapp",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-publishcanvasapp"
-        }
-      },
-      {
-        "id": "powerapps-sharecanvasapp",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-sharecanvasapp"
-        }
-      },
-      {
-        "id": "powerapps-recoverpowerapp",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-recoverpowerapp"
-        }
-      },
-      {
-        "id": "powerapps-toolsinstaller",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-toolsinstaller"
         }
       }
     ]

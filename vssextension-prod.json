@@ -1,9 +1,9 @@
 {
     "manifestVersion": 1,
-    "id": "hitachi-ci-build-tools",
-    "name": "Hitachi Build Tools",
+    "id": "bclg-ci-build-tools",
+    "name": "BCLG Build Tools",
     "version": "1.0.65",
-    "publisher": "hitachisolutionseurope",
+    "publisher": "bclg",
     "targets": [
       {
         "id": "Microsoft.VisualStudio.Services"
