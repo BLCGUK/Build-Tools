@@ -29,31 +29,18 @@
     },
     "files": [
       {
-        "path": "tasks/powerautomate-enableflow"
-      },
-      {
-        "path": "tasks/powerapps-getpowerapp"
+        "path": "build-tools-tasks/azcustomvision-trainmodel"
       }
     ],
     "contributions": [
       {
-        "id": "powerapps-enableflow",
+        "id": "azcustomvision-trainmodel",
         "type": "ms.vss-distributed-task.task",
         "targets": [
           "ms.vss-distributed-task.tasks"
         ],
         "properties": {
-          "name": "build-tools-tasks/powerapps-enableflow"
-        }
-      },
-      {
-        "id": "powerapps-httpcall",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "tasks/powerapps-httpcall"
+          "name": "build-tools-tasks/azcustomvision-trainmodel"
         }
       }
     ]
