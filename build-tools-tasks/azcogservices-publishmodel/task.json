@@ -1,0 +1,71 @@
+{
+  "id": "eea1e274-f21c-4eac-8a60-998c98f26740",
+  "name": "powerapps-removeflow",
+  "friendlyName": "Remove PowerAutomate",
+  "description": "Removes specified powerautomate flows from a solution in your target environment",
+  "author": "Hitachi Solutions Europe",
+  "helpMarkDown": "More information on PowerApps cmdlets can be found here ",
+  "category": "Build",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [],
+  "version": {
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 10
+  },
+  "minimumAgentVersion": "1.95.0",
+  "instanceNameFormat": "Hitachi Build Tools - Remove PowerAutomate",
+  "inputs": [
+    {
+      "name": "typeofauthentication",
+      "type": "pickList",
+      "label": "Type of Auth",
+      "required": true,
+      "options": {
+          "connectionstring": "Connection String",
+          "serviceconnection": "Service Connection"
+      }
+    },
+    {
+      "name": "powerAppsServiceConnection",
+      "type": "connectedService:generic",
+      "label": "PowerApps Service",
+      "helpMarkDown": "Create a generic service connection to powerapps",
+      "visibleRule": "typeofauthentication = serviceconnection",
+      "required": true
+    },
+    {
+      "name": "powerAppsUsername",
+      "type": "string",
+      "label": "PowerApps Username",
+      "defaultValue": "",
+      "visibleRule": "typeofauthentication = connectionstring",
+      "required": true,
+      "helpMarkDown": "Username of PA "
+    },
+    {
+      "name": "powerAppsPassword",
+      "type": "string",
+      "label": "PowerApps Password",
+      "visibleRule": "typeofauthentication = connectionstring",
+      "required": true,
+      "helpMarkDown": ""
+    },
+    {
+      "name": "powerAutomateId",
+      "type": "string",
+      "label": "PowerAutomate Id",
+      "required": true,
+      "helpMarkDown": "The name of the powerautomate flow you'd like to enable"
+    }
+  ],
+  "execution": {
+    "PowerShell3": {
+      "target": "powerappsremoveflow.ps1",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

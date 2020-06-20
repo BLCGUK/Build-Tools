@@ -1,0 +1,61 @@
+{
+    "manifestVersion": 1,
+    "id": "hitachi-ci-build-tools",
+    "name": "Hitachi Build Tools",
+    "version": "1.0.65",
+    "publisher": "hitachisolutionseurope",
+    "targets": [
+      {
+        "id": "Microsoft.VisualStudio.Services"
+      }
+    ],
+    "description": "Tasks for automating PowerPlatform commands from build and release pipelines",
+    "categories": [
+      "Azure Pipelines"
+    ],
+    "public": false,
+    "galleryFlags": [
+      "Preview"
+    ],
+    "tags": [
+      "PowerApps",
+      "CDS",
+      "Flow",
+      "Model-Driven PowerApps",
+      "Canvas PowerApps"
+    ],
+    "icons": {
+      "default": "images/extension-icon.png"
+    },
+    "files": [
+      {
+        "path": "tasks/powerautomate-enableflow"
+      },
+      {
+        "path": "tasks/powerapps-getpowerapp"
+      }
+    ],
+    "contributions": [
+      {
+        "id": "powerapps-enableflow",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+          "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+          "name": "build-tools-tasks/powerapps-enableflow"
+        }
+      },
+      {
+        "id": "powerapps-httpcall",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+          "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+          "name": "tasks/powerapps-httpcall"
+        }
+      }
+    ]
+  }
+  

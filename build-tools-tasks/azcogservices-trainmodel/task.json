@@ -1,0 +1,37 @@
+{
+    "id": "2fab899e-d173-4883-9738-d10249722c23",
+    "name": "powerapps-httpcall",
+    "friendlyName": "Call a flow from HTTP",
+    "description": "Calls a flow from a HTTP request",
+    "author": "Hitachi Solutions Europe",
+    "helpMarkDown": "HTTP request documentation can be found here",
+    "category": "Build",
+    "visibility": [
+      "Build",
+      "Release"
+    ],
+    "demands": [],
+    "version": {
+      "Major": 0,
+      "Minor": 1,
+      "Patch": 4
+    },
+    "minimumAgentVersion": "1.95.0",
+    "instanceNameFormat": "Hitachi Build Tools - Call HTTP Endpoint",
+    "inputs": [
+      {
+        "name": "httpEndPoint",
+        "type": "string",
+        "label": "Flow HTTP Url",
+        "required": true,
+        "helpMarkDown": "HTTP endpoint that you would like to call from the release pipeline"
+      }
+    ],
+    "execution": {
+      "PowerShell3": {
+        "target": "powerappshttpcall.ps1",
+        "workingDirectory": "$(currentDirectory)"
+      }
+    }
+  }
+  
