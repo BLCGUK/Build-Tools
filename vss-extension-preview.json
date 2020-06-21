@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "bclg-ci-build-tools",
     "name": "BCLG Build Tools - Preview",
-    "version": "1.0.36",
+    "version": "1.0.37",
     "publisher": "bclg",
     "targets": [
       {
