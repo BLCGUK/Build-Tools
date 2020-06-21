@@ -1,0 +1,56 @@
+{
+    "id": "cb29dbf7-919f-4362-afa1-5ce4136338e3",
+    "name": "azcogservices-trainmodel",
+    "friendlyName": "Train Custom Vision Model",
+    "description": "Hits an endpoint",
+    "author": "",
+    "helpMarkDown": "HTTP request documentation can be found here",
+    "category": "Build",
+    "visibility": [
+      "Build",
+      "Release"
+    ],
+    "demands": [],
+    "version": {
+      "Major": 0,
+      "Minor": 1,
+      "Patch": 4
+    },
+    "minimumAgentVersion": "1.95.0",
+    "instanceNameFormat": "BCLG - Train Model",
+    "inputs": [
+      {
+        "name": "typeofauthentication",
+        "type": "pickList",
+        "label": "Type of Auth",
+        "required": true,
+        "options": {
+            "connectionstring": "Endpoint with Key",
+            "serviceconnection": "Service Connection"
+        }
+      },
+      {
+        "name": "genericServiceConnection",
+        "type": "connectedService:generic",
+        "label": "Azure Service",
+        "helpMarkDown": "Create a generic service connection to powerapps",
+        "visibleRule": "typeofauthentication = serviceconnection",
+        "required": true
+      },
+      {
+        "name": "cognitiveServicesEndPoint",
+        "type": "string",
+        "label": "Enter your Cognitive Services Endpoint",
+        "required": true,
+        "helpMarkDown": "HTTP endpoint that you would like to call from the release pipeline",
+        "visibleRule": "typeofauthentication = connectionstring"
+      }
+    ],
+    "execution": {
+      "PowerShell3": {
+        "target": "azcustomvisiontrainmodel.ps1",
+        "workingDirectory": "$(currentDirectory)"
+      }
+    }
+  }
+  

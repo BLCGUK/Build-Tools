@@ -1,0 +1,47 @@
+{
+  "manifestVersion": 1,
+  "id": "bclg-ci-build-tools",
+  "name": "BCLG Build Tools",
+  "version": "1.0.37",
+  "publisher": "bclg",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Tasks for automating Azure Cognitive Services from build and release pipelines",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "public": false,
+  "galleryFlags": [
+    "Preview"
+  ],
+  "tags": [
+    "PowerApps",
+    "CDS",
+    "Flow",
+    "Model-Driven PowerApps",
+    "Canvas PowerApps"
+  ],
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "files": [
+    {
+      "path": "build-tools-tasks/azcustomvision-trainmodel"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "azcustomvision-trainmodel",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "build-tools-tasks/azcustomvision-trainmodel"
+      }
+    }
+  ]
+}
